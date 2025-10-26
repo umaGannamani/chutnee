@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HeroCollage from "./components/HeroCollage";
+import Intro from "./components/Intro";
+import WhatWeOffer from "./components/WhatWeOffer";
+import BestSellers from "./components/BestSellers";
+import Reserve from "./components/Reserve";
+import PopularDishes from "./components/PopularDishes";
+import AboutUs from "./components/AboutUs";
+import Reels from "./components/Reels";
+import SocialShare from "./components/SocialShare";
+import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
+import WhyChoose from "./components/WhyChoose";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="site">
+      <main>
+        <HeroCollage />
+        <Intro />
+        <WhatWeOffer />
+        <WhyChoose />
+        <BestSellers />
+        <Reserve />
+        <PopularDishes />
+        <AboutUs />
+        <Reels />
+        <SocialShare />
+        <Gallery />
+      </main>
+      <Footer />
     </div>
   );
 }
-
-export default App;

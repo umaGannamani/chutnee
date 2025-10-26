@@ -1,0 +1,56 @@
+.socials-section {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #FFF0F8;
+;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* optional small gap between images */
+  flex-wrap: wrap;
+}
+
+.social-card {
+  position: relative;
+  flex: 0 0 250px; /* reduced width */
+  overflow: hidden;
+  border-radius: 12px; /* optional rounded corners */
+}
+
+.social-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-card {
+    flex: 1 1 45%; /* 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-card {
+    flex: 1 1 90%; /* 1 per row */
+  }
+}

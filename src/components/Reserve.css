@@ -1,0 +1,140 @@
+.reserve-section {
+  background-image: url("https://res.cloudinary.com/dlx9tnj7p/image/upload/v1761447116/Rectangle_8_bmwpb7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.reserve-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.reserve-left {
+  max-width: 500px;
+  text-align: left;
+  background: transparent;
+}
+
+.reserve-left h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.reserve-left p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.reserve-btn {
+  background-color: #fff;
+  color: #10ac96;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #10ac96;
+  color: #fff;
+}
+
+/* 🔘 Center play icon */
+.reserve-center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Round white background behind play icon */
+.reserve-play-wrapper {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.reserve-play-wrapper:hover {
+  transform: scale(1.1);
+}
+
+/* Smaller play icon inside */
+.reserve-play {
+  width: 30px;
+  height: 30px;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 992px) {
+  .reserve-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reserve-left {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .reserve-play-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .reserve-play {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reserve-left h3 {
+    font-size: 1.6rem;
+  }
+
+  .reserve-left p {
+    font-size: 1rem;
+  }
+
+  .reserve-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .reserve-play-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .reserve-play {
+    width: 20px;
+    height: 20px;
+  }
+}

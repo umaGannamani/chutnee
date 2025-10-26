@@ -1,0 +1,151 @@
+.whychoose {
+  padding: 5rem 0;
+}
+
+.whychoose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Left Image */
+.whychoose-image img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Right Content */
+.whychoose-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Text Section */
+.whychoose-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.whychoose-text h2 span {
+  color: #f26a8d; /* pink accent for Chutnée */
+}
+
+.subheading {
+  font-size: 1.4rem;
+  color: #10ac96;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.main-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.whychoose-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stat-percent {
+  background: #10ac96;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.stat-text {
+  background: #874063;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .whychoose-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .whychoose-content {
+    align-items: center;
+  }
+
+  .whychoose-text {
+    max-width: 600px;
+  }
+
+  .whychoose-stats {
+    align-items: center;
+  }
+
+  .stat-card {
+    flex-direction: row;
+  }
+
+  .whychoose-image img {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whychoose {
+    padding: 3rem 1rem;
+  }
+
+  .whychoose-text h2 {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
+
+  .main-text {
+    font-size: 1rem;
+  }
+
+  .stat-percent {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .stat-text {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .whychoose-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .whychoose-image img {
+    max-width: 320px;
+  }
+
+  .whychoose-stats {
+    gap: 0.8rem;
+  }
+}
