@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# ChutNee Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **mobile-responsive web application** built using **React.js**, based on the ChutNee Figma design. This project demonstrates React.js proficiency, frontend development skills, CSS animations, and performance optimization for mobile devices.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Installation & Setup](#installation--setup)
+- [Project Structure](#project-structure)
+- [Animations](#animations)
+- [Performance & Responsiveness](#performance--responsiveness)
+- [Live Demo](#live-demo)
+- [GitHub Repository](#github-repository)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Overview
 
-### `npm test`
+This project is a fully functional web application created to replicate the **ChutNee Figma design** accurately. All components, layouts, and core styling have been implemented in React.js with a focus on **performance, responsiveness, and mobile user experience**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Pixel-perfect translation of Figma design to React.js components.
+- Mobile-first, fully responsive design for all screen sizes.
+- Smooth **CSS animations**:
+  - Hover effects
+  - Load-in transitions
+  - State change animations
+- Optimized performance for mobile and desktop devices.
+- Modular and maintainable React.js code structure.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technology Stack
 
-### `npm run eject`
+- **Frontend:** React.js  
+- **Styling:** CSS, CSS Modules / Styled Components  
+- **Animations:** Pure CSS (CSS Transitions & Keyframes)  
+- **Deployment:** Vercel / Netlify  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/umaGannamani/chutnee.git
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory:
+cd chutnee
+--- 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install dependencies:
+npm install
+---
 
-### Code Splitting
+4. Run the development server:
+npm start
+The application will run at http://localhost:3000.
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project Structure
 
-### Analyzing the Bundle Size
+chutnee/
+│
+├── public/               # Static assets
+├── src/         
+│   ├── components/       # Reusable UI components
+│   ├── styles/           # CSS / styling files
+│   ├── App.js            # Main application component
+│   └── index.js          # React entry point
+└── package.json           # Project dependencies & scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Animations
 
-### Making a Progressive Web App
+Hover Effects: Smooth scaling, color, or shadow changes on interactive elements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Load-In Transitions: Elements fade in or slide in on page load.
 
-### Advanced Configuration
+State Change Animations: Buttons, modals, and other interactive elements animate on state changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+All animations are implemented using pure CSS to ensure maximum performance and minimal jank.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Performance & Responsiveness
 
-### `npm run build` fails to minify
+Fully responsive layout using CSS Flexbox and Grid.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Optimized image sizes and lazy loading where applicable.
+
+Mobile-first approach ensures excellent UX on smaller devices.
+
+Efficient React.js component structure for smooth rendering.
+
+Live Demo
+
+View the live application here:
+Live Demo Link
