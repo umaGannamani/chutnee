@@ -7,7 +7,7 @@ export default function Intro() {
       <div className="intro-container">
         {/* Left Text */}
         <div className="intro-left">
-          <h2>where tradition meets innovation in every bite.E</h2>
+          <h2>where tradition meets innovation in every bite.</h2>
           <p>
             Founded by a passionate husband-and-wife duo, Chutnée is London’s go-to for a bold and refreshing twist on South Asian street food. Our dishes are crafted from cherished family recipes using hand-picked ingredients, blending authentic flavours with Western finesse.
 From signature chaii to inventive plates paired with our vibrant chutneys, every bite is made to surprise and comfort. More than a café, our House of Chaii is an experience—where rich teas, soulful food, and fusion delights bring the warmth of home to every dish

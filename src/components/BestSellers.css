@@ -9,16 +9,18 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 40px;
-  text-align: center;
   letter-spacing: 1px;
 }
 
+/* ---------- Main Layout ---------- */
 .bs-track {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 50px; /* space between items */
+  flex-wrap: nowrap; /* keep items in one line */
+  position: relative;
+  overflow-x: auto;
 }
 
 .symbol {
@@ -31,8 +33,10 @@
   flex-direction: column;
   align-items: center;
   color: #fff;
+  text-align: center;
 }
 
+/* ---------- Circular Shape ---------- */
 .bs-shape {
   width: 150px;
   height: 150px;
@@ -63,6 +67,7 @@
   color: #fff;
 }
 
+/* ---------- Button ---------- */
 .view-menu-container {
   margin-top: 50px;
 }
@@ -84,34 +89,47 @@
   color: #fff;
 }
 
-/* ✅ Responsive Design */
-@media (max-width: 768px) {
-  .bs-shape {
-    width: 120px;
-    height: 120px;
-  }
+/* ---------- RESPONSIVE DESIGN ---------- */
 
-  .bs-title {
-    font-size: 1.8rem;
-  }
-
+/* Tablet view (max-width: 992px) */
+@media (max-width: 992px) {
   .bs-track {
-    gap: 20px;
+    gap: 35px;
+    flex-wrap: nowrap; /* keep one row on tablets too */
+  }
+
+  .bs-shape {
+    width: 130px;
+    height: 130px;
   }
 
   .symbol {
-    width: 30px;
+    width: 32px;
+  }
+
+  .bs-title {
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 480px) {
-  .bs-title {
-    font-size: 1.5rem;
+/* Mobile view (max-width: 600px) */
+@media (max-width: 600px) {
+  .bs-track {
+    flex-direction: column; /* stack vertically on small screens */
+    gap: 25px;
+  }
+
+  .symbol {
+    display: none; /* hide side symbols on mobile */
   }
 
   .bs-shape {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .bs-title {
+    font-size: 1.6rem;
   }
 
   .bs-label {

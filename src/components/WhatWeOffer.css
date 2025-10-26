@@ -1,89 +1,56 @@
+/* ------------------------------
+   WHAT WE OFFER SECTION
+--------------------------------*/
 .whatwe {
-  padding: 5rem 0;
   text-align: center;
+  padding: 4rem 1rem;
+  background-color: #fff8f3;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 3rem;
-  color: #222;
+  color: #ff0080;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
 }
 
-/* Offer Grid Layout */
 .offer-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Large screens */
-  gap: 2rem;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 .offer-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .offer-card:hover {
-  transform: scale(1.08);
+  transform: translateY(-6px);
+}
+
+.offer-icon {
+  background-color: #fff2e8;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .offer-icon img {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
 .offer-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
-}
-
-/* Medium screens - 3 per row */
-@media (max-width: 1024px) {
-  .offer-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .offer-icon img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-/* Small screens - 2 per row */
-@media (max-width: 768px) {
-  .offer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .offer-icon img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .offer-title {
-    font-size: 1rem;
-  }
-}
-
-/* Extra small - 1 per row */
-@media (max-width: 480px) {
-  .offer-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .offer-icon img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .offer-title {
-    font-size: 0.95rem;
-  }
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #4b3a3a;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
 }

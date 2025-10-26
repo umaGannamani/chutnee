@@ -8,9 +8,9 @@ export default function Reserve() {
         <div className="reserve-left">
           <h3>RESERVE YOUR TABLE AT CHUTNÉE</h3>
           <p>
-            Bright spaces, cosy seats — book a table and enjoy our special menu.
+            Whether you're planning a cozy breakfast, a family dinner, or a stylish catch-up with friends — we’ve got the perfect seat waiting for you.
           </p>
-          <button className="reserve-btn">Reserve</button>
+          <button className="reserve-btn">Book a Table</button>
         </div>
 
         <div className="reserve-center">

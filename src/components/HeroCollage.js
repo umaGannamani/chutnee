@@ -42,9 +42,6 @@ export default function HeroCollage() {
       <div className="hero-content container">
         <div className="hero-left">
           <h1 className="hero-title">WELCOME TO CHUTNEE</h1>
-          <p className="hero-sub">
-            Where tradition meets innovation in every bite
-          </p>
           <div className="hero-ctas">
             <button className="btn primary">View Menu</button>
             <button className="btn secondary">Book Table</button>

@@ -7,68 +7,112 @@
 .about-heading {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #222;
+  color: #EC1D84;
   margin-bottom: 60px;
 }
 
+/* ---------- Grid Layout ---------- */
 .about-grid {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; /* no wrapping on large screens */
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
+  gap: 20px;
 }
 
+/* ---------- Card ---------- */
 .about-card {
-  flex: 1; /* all cards take equal width */
+  flex: 0 1 28%;
   background-color: #f9f9f9;
-  border-radius: 0; /* remove rounded corners for flush layout */
-  padding: 25px 20px;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0; /* remove margins */
-  border-left: 1px solid #fff; /* optional: thin divider if needed */
+  border-left: 1px solid #fff;
+  min-height: 480px; /* slightly taller overall */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .about-card:first-child {
-  border-left: none; /* no left border on first card */
+  border-left: none;
 }
 
+/* ---------- Image Section (75%) ---------- */
 .about-img-top,
 .about-img {
   width: 100%;
-  border-radius: 0; /* remove radius for flush edges */
-  margin-top: 10px;
+  height: 75%; /* increased from 65% → 75% */
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* ---------- Content Section (25%) ---------- */
+.about-content {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .stars {
   font-size: 16px;
   color: #ffc107;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .about-text {
   font-size: 0.95rem;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  color: #874063;
+  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 .about-author {
   font-weight: 600;
-  color: #10ac96;
-  margin-bottom: 15px;
+  color: #874063;
+  margin-bottom: 0;
 }
 
-/* Responsive */
+/* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .about-grid {
-    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
   .about-card {
-    flex: 1 1 100%; /* full width on tablets/small screens */
-    margin-bottom: 20px;
+    flex: 0 1 45%;
+    min-height: 430px;
+  }
+
+  .about-img-top,
+  .about-img {
+    height: 70%;
+  }
+
+  .about-content {
+    height: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    flex: 1 1 100%;
+    min-height: 400px;
+  }
+
+  .about-img-top,
+  .about-img {
+    height: 68%; /* better balance on mobile */
+  }
+
+  .about-content {
+    height: 32%;
   }
 }

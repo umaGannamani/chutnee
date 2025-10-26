@@ -1,5 +1,10 @@
+/* ===============================
+   WHY CHOOSE CHUTNÉE SECTION
+================================= */
+
 .whychoose {
   padding: 5rem 0;
+  background-color: #fff8f3;
 }
 
 .whychoose-grid {
@@ -9,78 +14,87 @@
   gap: 3rem;
 }
 
-/* Left Image */
+/* ---------- Left Image ---------- */
 .whychoose-image img {
   width: 100%;
   max-width: 550px;
   height: auto;
   display: block;
   margin: 0 auto;
+  object-fit: cover;
 }
 
-/* Right Content */
+/* ---------- Right Content ---------- */
 .whychoose-content {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-/* Text Section */
+/* ---------- Text Section ---------- */
 .whychoose-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #222;
+  color: #ec1d84; /* full heading color */
   margin-bottom: 0.5rem;
-}
-
-.whychoose-text h2 span {
-  color: #f26a8d; /* pink accent for Chutnée */
 }
 
 .subheading {
   font-size: 1.4rem;
-  color: #10ac96;
+  color: #874063;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .main-text {
   font-size: 1.1rem;
-  color: #555;
+  color: #874063;
   line-height: 1.6;
 }
 
-/* Stats Section */
+/* ---------- Stats Section ---------- */
 .whychoose-stats {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  flex-direction: row; /* horizontal row */
+  justify-content: space-between; /* evenly spaced */
+  align-items: stretch;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 .stat-card {
+  flex: 1;
   display: flex;
+  flex-direction: column; /* percent on top, text below */
   align-items: center;
-  width: fit-content;
-  border-radius: 8px;
-  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
 }
 
 .stat-percent {
-  background: #10ac96;
-  color: white;
   font-weight: 700;
-  font-size: 1.4rem;
-  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
+  color: #10ac96; /* text color */
+  margin-bottom: 0.4rem;
 }
 
 .stat-text {
-  background: #874063;
-  color: white;
   font-size: 1rem;
-  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  color: #874063; /* text color */
+  line-height: 1.4;
 }
 
-/* Responsive Design */
+/* ---------- Responsive Design ---------- */
 @media (max-width: 1024px) {
   .whychoose-grid {
     grid-template-columns: 1fr;
@@ -96,15 +110,13 @@
   }
 
   .whychoose-stats {
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
   }
 
   .stat-card {
-    flex-direction: row;
-  }
-
-  .whychoose-image img {
-    max-width: 450px;
+    flex: 0 1 45%;
   }
 }
 
@@ -125,14 +137,21 @@
     font-size: 1rem;
   }
 
+  .whychoose-stats {
+    gap: 1rem;
+  }
+
+  .stat-card {
+    flex: 0 1 100%;
+    padding: 1rem;
+  }
+
   .stat-percent {
-    font-size: 1.2rem;
-    padding: 0.6rem 1.2rem;
+    font-size: 1.3rem;
   }
 
   .stat-text {
     font-size: 0.95rem;
-    padding: 0.6rem 1.2rem;
   }
 }
 
@@ -146,6 +165,12 @@
   }
 
   .whychoose-stats {
-    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 250px;
   }
 }
